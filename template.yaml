@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Amazon Lambda Backed API Gateway Backend for an IFTTT WebHook into your AWS account
+Parameters:
+  APIKey:
+    Description: An API Key to provide a very loose trust mechanism for IFTTT to call into your AWS Account.
+    Type: String
+Outputs:
+  WebHookURL:
+    Description: URL of your API endpoint
+    Value: !Join
+      - ''
+      - - https://
+        - !Ref ServerlessRestApi
+        - '.execute-api.'
+        - !Ref 'AWS::Region'
+        - '.amazonaws.com/Prod?API_KEY='
+        - !Ref APIKey
+Resources:
+  LambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./build/webhook.zip
+      Handler: webhook.handler
+      Runtime: nodejs6.10  
+      Environment: 
+        Variables:
+          API_KEY: !Ref APIKey
+      Events:
+        ProxyApiRoot:
+          Type: Api
+          Properties:
+            Path: /
+            Method: ANY

@@ -1,0 +1,54 @@
+{
+    "resource": "/",
+    "path": "/",
+    "httpMethod": "POST",
+    "headers": {
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "US",
+        "Content-type": "application/json",
+        "Host": "e35hv534ek.execute-api.us-east-1.amazonaws.com",
+        "Via": "1.1 995357b35cef56ea5d31bd9fddec6ce9.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "SmPh8-BMT6Klwfw62Z7AghwoBYIARaP-KP_vTpV2Fh2iUIxIKs7pew==",
+        "X-Amzn-Trace-Id": "Root=1-5a083b13-01370af42fb6b67654e37e05",
+        "X-Forwarded-For": "54.226.108.54, 54.239.145.74",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https",
+        "x-newrelic-id": "VwAOU1RRGwAFUFZUAwQE",
+        "x-newrelic-transaction": "PxRRVwJWXAEBU1kEAVIFREhXV18RA09AUQYOB14PBgFVVQFVCFkCB0YaFQVSUF0AVlYFQGo="
+    },
+    "queryStringParameters": {
+        "API_KEY": "MY_CUSTOM_API_KEY"
+    },
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "path": "/Prod",
+        "accountId": "525248949289",
+        "resourceId": "ayrfps4f82",
+        "stage": "Prod",
+        "requestId": "fdff5d5b-c7a2-11e7-88c3-3541fc9ec3de",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "apiKey": "",
+            "sourceIp": "54.226.108.54",
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": null,
+            "user": null
+        },
+        "resourcePath": "/",
+        "httpMethod": "POST",
+        "apiId": "e35hv534ek"
+    },
+    "body": "",
+    "isBase64Encoded": false
+}
