@@ -4,7 +4,7 @@
   "description": "Amazon Lambda Backed API Gateway Backend for an IFTTT WebHook into your AWS account",
   "main": "webhook/index.js",
   "config": {
-    "api_key": "1",
+    "api_key": "",
     "build_dir": "build",
     "lambda_dir": "webhook",
     "stack_name": "aws-sam-ifttt-webhook-in",
