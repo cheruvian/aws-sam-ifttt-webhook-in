@@ -26,4 +26,4 @@ If you want to forward along ingredients from your IFTTT Applet Trigger, select 
 
 You can choose to hardcode your endpoint or allow it to be configured by the Applet user.
 
-![IFTTT Configuration Screenshot](https://raw.githubusercontent.com/cheruvian/aws-sam-ifttt-webhook-in/master/img/ifttt-config.jpg)
+![IFTTT Configuration Screenshot](/img/ifttt-config.jpg)
